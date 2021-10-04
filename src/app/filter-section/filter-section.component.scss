@@ -1,6 +1,8 @@
 @import "../../assets/styles/variables";
 
 .filter-card {
+  background-color: $dark-blue;
+  border-radius: 15px;
   .filter-user-info {
     display: flex;
     align-items: center;
@@ -27,5 +29,21 @@
         font-weight: 300;
       }
     }
+  }
+
+  .filter-tabs{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+    color: hsl(235, 45%, 61%);
+
+    .active, a:hover{
+      color: #fff;
+    }
+
+    a{
+      transition: 0.3s;
+    }
+  
   }
 }
