@@ -1,0 +1,31 @@
+@import "../../assets/styles/variables";
+
+.filter-card {
+  .filter-user-info {
+    display: flex;
+    align-items: center;
+    background-color: $blue;
+    padding: 25px;
+    width: 280px;
+    border-radius: 15px;
+
+    .filter-img-round {
+      border: 4px solid white;
+      border-radius: 50%;
+      height: 60px;
+      width: 60px;
+    }
+    .filter-user-head {
+      margin-left: 15px;
+      h5 {
+        color: $pale-blue;
+        font-weight: 400;
+      }
+      h2 {
+        margin-top: 5px;
+        color: #fff;
+        font-weight: 300;
+      }
+    }
+  }
+}
