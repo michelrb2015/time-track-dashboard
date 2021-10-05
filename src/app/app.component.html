@@ -1,6 +1,11 @@
 <div class="container">
-    <app-filter-section></app-filter-section>
-    <section class="card-section">
-        <app-card></app-card>
-    </section>
+  <app-filter-section></app-filter-section>
+  <section class="card-section">
+    <app-card
+      *ngFor="let item of timeList"
+      [title]="item.title"
+      [current]="item.timeframes.weekly.current"
+      [previous]="item.timeframes.weekly.previous"
+    ></app-card>
+  </section>
 </div>
