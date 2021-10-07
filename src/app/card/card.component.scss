@@ -17,23 +17,23 @@
       top: -10px;
     }
 
-    &.light-orange{
-        background-color: $light-orange;
+    &.light-orange {
+      background-color: $light-orange;
     }
-    &.soft-blue{
-        background-color: $soft-blue;
+    &.soft-blue {
+      background-color: $soft-blue;
     }
-    &.light-red{
-        background-color: $light-red;
+    &.light-red {
+      background-color: $light-red;
     }
-    &.lime-green{
-        background-color: $lime-green;
+    &.lime-green {
+      background-color: $lime-green;
     }
-    &.violet{
-        background-color: $violet;
+    &.violet {
+      background-color: $violet;
     }
-    &.soft-orange{
-        background-color: $soft-orange;
+    &.soft-orange {
+      background-color: $soft-orange;
     }
   }
 
@@ -43,13 +43,16 @@
     width: 100%;
     height: 76%;
     display: flex;
-    background-color: #1c1f4a;
+    background-color: $dark-blue;
     border-radius: 15px;
 
     display: flex;
     flex-direction: column;
     padding: 0px;
     justify-content: flex-start;
+
+    transition: ease-in-out 0.1s;
+    cursor: pointer;
 
     .title-container {
       display: flex;
@@ -80,6 +83,48 @@
         font-size: 15px;
 
         color: #bdc1ff;
+      }
+    }
+  }
+  .card-content:active {
+    background-color: $hover-blue;
+  }
+
+  .card-dot-action {
+    cursor: pointer;
+  }
+  .card-dot-action:active svg path,
+  .card-dot-action:hover svg path {
+    fill: #fff;
+  }
+}
+
+@media (min-width: 1440px) {
+  .card {
+    margin: 10px;
+    .card-background {
+      height: 280px;
+      width: 280px;
+    }
+    .card-content {
+      height: 85%;
+      .title-container {
+        padding: 40px 40px 0;
+
+        h3 {
+          font-size: 18px;
+        }
+      }
+      .timer-container {
+        padding: 25px 40px;
+        align-items: flex-start;
+        flex-direction: column;
+        h1 {
+          font-size: 58px;
+        }
+        p{
+          margin-top: 20px;
+        }
       }
     }
   }

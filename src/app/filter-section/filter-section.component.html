@@ -14,8 +14,8 @@
     </div>
   </div>
   <div class="filter-tabs">
-    <a>Daily</a>
-    <a class="active">Weekly</a>
-    <a>Monthly</a>
+    <a (click)="onActive('daily')" [ngClass]="{'active': tagActive == 'daily'}">Daily</a>
+    <a (click)="onActive('weekly')" [ngClass]="{'active': tagActive == 'weekly'}">Weekly</a>
+    <a (click)="onActive('monthly')" [ngClass]="{'active': tagActive == 'monthly'}">Monthly</a>
   </div>
 </div>

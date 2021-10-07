@@ -1,11 +1,22 @@
-.container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin: 80px 0;
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 80px 0;
 }
 
-.card-section{
-    margin: 20px 0;
+@media (min-width: 1440px) {
+  .container {
+    flex-direction: row;
+    margin: auto;
+    height: 100%;
+    width: 100%;
+
+    .card-section {
+      display: flex;
+      flex-wrap: wrap;
+      width: 900px;
+    }
+  }
 }

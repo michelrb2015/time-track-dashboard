@@ -7,8 +7,8 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class CardComponent implements OnInit {
 
-  @Input() current!: number;
-  @Input() previous!: number;
+  @Input() timeframes!: any;
+  @Input() filter!: any;
   @Input() title!: string;
 
   route: string = '';

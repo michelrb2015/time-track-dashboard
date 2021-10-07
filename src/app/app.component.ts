@@ -8,4 +8,9 @@ import data from './_files/data.json';
 export class AppComponent {
   title = 'time-track-dashboard-angular';
   public timeList:any = data;
+  filterStr: string = 'weekly';
+
+  onFilterEvent(e: string){
+    this.filterStr = e;
+  }
 }
